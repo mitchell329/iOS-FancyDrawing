@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FancyDrawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xcr-nz-p9k" userLabel="ToolView">
+                                <rect key="frame" x="0.0" y="531" width="600" height="69"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcD-bP-sy2" userLabel="MagentaButton">
+                                        <rect key="frame" x="8" y="20" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="selectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEy-UV-RQr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQe-Gv-aBO" userLabel="YellowButton">
+                                        <rect key="frame" x="38" y="20" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="selected" backgroundImage="RoundShape"/>
+                                        <connections>
+                                            <action selector="selectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhy-tM-Gbm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxe-9v-66R" userLabel="CyanButton">
+                                        <rect key="frame" x="68" y="20" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="selectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxG-CY-Jza"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwt-Fe-eG6" userLabel="OrangeButton">
+                                        <rect key="frame" x="98" y="20" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="selectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="twQ-MJ-pLd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNb-Fd-CYb" userLabel="BrownButton">
+                                        <rect key="frame" x="128" y="20" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="selectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ju-SI-UnM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhW-d6-JxM" userLabel="PurpleButton">
+                                        <rect key="frame" x="158" y="20" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="selectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bxm-O2-7WS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgc-bG-bdX" userLabel="BlackButton">
+                                        <rect key="frame" x="187" y="20" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="selectColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AtD-cJ-xQK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0K-ys-tNF" userLabel="EclipseButton">
+                                        <rect key="frame" x="230" y="20" width="30" height="30"/>
+                                        <state key="normal" image="RoundShape"/>
+                                        <connections>
+                                            <action selector="selectShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkm-0R-GiR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JK0-DB-w68" userLabel="RectButton">
+                                        <rect key="frame" x="268" y="20" width="30" height="30"/>
+                                        <state key="normal" image="RectShape"/>
+                                        <connections>
+                                            <action selector="selectShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ecy-TI-qzf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOX-vN-Amm" userLabel="TriangleButton">
+                                        <rect key="frame" x="306" y="20" width="30" height="30"/>
+                                        <state key="normal" image="TriangleShape"/>
+                                        <connections>
+                                            <action selector="selectShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rks-76-9Qh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYB-1n-QPc" userLabel="LineButton">
+                                        <rect key="frame" x="339" y="20" width="30" height="30"/>
+                                        <state key="normal" image="LineShage"/>
+                                        <connections>
+                                            <action selector="selectShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OY7-iE-zhY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWS-tM-VfZ" userLabel="FreeDrawButton">
+                                        <rect key="frame" x="367" y="20" width="30" height="30"/>
+                                        <state key="normal" image="PencilShape"/>
+                                        <connections>
+                                            <action selector="selectShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g2e-4W-e5t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lid-ox-lEu" userLabel="DeleteButton">
+                                        <rect key="frame" x="562" y="20" width="30" height="30"/>
+                                        <state key="normal" image="TrashBin"/>
+                                        <connections>
+                                            <action selector="selectFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6Z-4A-6ua"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvi-VU-lkH" userLabel="EraserButton">
+                                        <rect key="frame" x="405" y="20" width="30" height="30"/>
+                                        <state key="normal" image="Eraser"/>
+                                        <connections>
+                                            <action selector="selectShape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="biB-wn-SZq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpk-pN-xu0">
+                                        <rect key="frame" x="443" y="20" width="30" height="30"/>
+                                        <state key="normal" image="LineWidth"/>
+                                        <connections>
+                                            <action selector="selectFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C0c-Xk-rbE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbs-1p-saU">
+                                        <rect key="frame" x="524" y="20" width="30" height="30"/>
+                                        <state key="normal" image="Save"/>
+                                        <connections>
+                                            <action selector="selectFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugq-l2-ho6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lid-ox-lEu" firstAttribute="centerY" secondItem="Xcr-nz-p9k" secondAttribute="centerY" id="05a-1V-sS6"/>
+                                    <constraint firstItem="Rvi-VU-lkH" firstAttribute="centerY" secondItem="Xcr-nz-p9k" secondAttribute="centerY" id="1jC-4I-6b0"/>
+                                    <constraint firstItem="xYB-1n-QPc" firstAttribute="centerY" secondItem="Xcr-nz-p9k" secondAttribute="centerY" id="3U3-EP-vKm"/>
+                                    <constraint firstItem="Rvi-VU-lkH" firstAttribute="leading" secondItem="DWS-tM-VfZ" secondAttribute="trailing" constant="6" id="4in-1R-9Zm"/>
+                                    <constraint firstItem="JK0-DB-w68" firstAttribute="leading" secondItem="f0K-ys-tNF" secondAttribute="trailing" constant="6" id="52a-fw-ipf"/>
+                                    <constraint firstItem="Mbs-1p-saU" firstAttribute="leading" secondItem="Lid-ox-lEu" secondAttribute="leading" constant="-36" id="6qq-pg-HFB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lid-ox-lEu" secondAttribute="trailing" constant="10" id="B5R-BX-qed"/>
+                                    <constraint firstItem="kOX-vN-Amm" firstAttribute="leading" secondItem="JK0-DB-w68" secondAttribute="trailing" constant="6" id="BHy-m7-csx"/>
+                                    <constraint firstItem="xYB-1n-QPc" firstAttribute="leading" secondItem="kOX-vN-Amm" secondAttribute="trailing" constant="6" id="H5f-yp-jMg"/>
+                                    <constraint firstItem="f0K-ys-tNF" firstAttribute="centerY" secondItem="Xcr-nz-p9k" secondAttribute="centerY" id="Uth-1H-bQ8"/>
+                                    <constraint firstItem="DWS-tM-VfZ" firstAttribute="centerY" secondItem="Xcr-nz-p9k" secondAttribute="centerY" id="ZJO-hi-hY6"/>
+                                    <constraint firstItem="DWS-tM-VfZ" firstAttribute="leading" secondItem="xYB-1n-QPc" secondAttribute="trailing" constant="6" id="ci7-oE-r62"/>
+                                    <constraint firstItem="JK0-DB-w68" firstAttribute="centerY" secondItem="Xcr-nz-p9k" secondAttribute="centerY" id="d18-ZV-A47"/>
+                                    <constraint firstItem="Mbs-1p-saU" firstAttribute="centerY" secondItem="Xcr-nz-p9k" secondAttribute="centerY" id="ejF-Co-JVj"/>
+                                    <constraint firstAttribute="height" constant="69" id="jyk-z8-fL9"/>
+                                    <constraint firstItem="tpk-pN-xu0" firstAttribute="leading" secondItem="Rvi-VU-lkH" secondAttribute="trailing" constant="6" id="nB0-MR-rJ3"/>
+                                    <constraint firstItem="tpk-pN-xu0" firstAttribute="centerY" secondItem="Xcr-nz-p9k" secondAttribute="centerY" id="uhP-Y8-ylk"/>
+                                    <constraint firstItem="kOX-vN-Amm" firstAttribute="centerY" secondItem="Xcr-nz-p9k" secondAttribute="centerY" id="vpe-Gy-2p7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iki-y6-Suh" userLabel="DrawView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="511"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VaG-hb-Dfk" appends="YES" id="RnV-Sh-4cH"/>
+                                </connections>
+                            </view>
+                            <pickerView hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Q7-QH-22Z">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xcr-nz-p9k" secondAttribute="bottom" id="6R4-5g-VXA"/>
+                            <constraint firstItem="Iki-y6-Suh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GBK-3g-4Of"/>
+                            <constraint firstItem="Iki-y6-Suh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="MPj-GK-lZl"/>
+                            <constraint firstItem="Xcr-nz-p9k" firstAttribute="top" secondItem="Iki-y6-Suh" secondAttribute="bottom" id="Y6S-Ab-Yqc"/>
+                            <constraint firstItem="8Q7-QH-22Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dCS-RP-Jq0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iki-y6-Suh" secondAttribute="trailing" constant="-20" id="lJa-AN-jEK" userLabel="trailingMargin = DrawView.trailing - 20"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xcr-nz-p9k" secondAttribute="trailing" constant="-20" id="p4x-kY-yg4"/>
+                            <constraint firstItem="Xcr-nz-p9k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="tte-KN-odS"/>
+                            <constraint firstItem="8Q7-QH-22Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uIG-aH-Fwf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBlack" destination="Wgc-bG-bdX" id="QJD-Fe-1BH"/>
+                        <outlet property="btnBrown" destination="iNb-Fd-CYb" id="kju-cS-Hjg"/>
+                        <outlet property="btnCyan" destination="dxe-9v-66R" id="5EZ-85-BLV"/>
+                        <outlet property="btnDelete" destination="Lid-ox-lEu" id="Rc3-bh-vMy"/>
+                        <outlet property="btnEclipse" destination="f0K-ys-tNF" id="OEk-cQ-OBS"/>
+                        <outlet property="btnEraser" destination="Rvi-VU-lkH" id="S5w-hl-676"/>
+                        <outlet property="btnFreeDraw" destination="DWS-tM-VfZ" id="rwl-lx-ROl"/>
+                        <outlet property="btnLine" destination="xYB-1n-QPc" id="4W8-n6-Z89"/>
+                        <outlet property="btnLineWidth" destination="tpk-pN-xu0" id="a7n-US-ppz"/>
+                        <outlet property="btnMagenta" destination="kcD-bP-sy2" id="Kbi-TX-h0V"/>
+                        <outlet property="btnOrange" destination="Lwt-Fe-eG6" id="2aS-My-SLF"/>
+                        <outlet property="btnPurple" destination="yhW-d6-JxM" id="hSz-s1-9gQ"/>
+                        <outlet property="btnRect" destination="JK0-DB-w68" id="Q8Y-Vx-FCR"/>
+                        <outlet property="btnSave" destination="Mbs-1p-saU" id="PNo-SS-odn"/>
+                        <outlet property="btnTriangle" destination="kOX-vN-Amm" id="dYx-NP-syd"/>
+                        <outlet property="btnYellow" destination="uQe-Gv-aBO" id="YBm-er-xi4"/>
+                        <outlet property="drawView" destination="Iki-y6-Suh" id="3IV-BJ-PcO"/>
+                        <outlet property="lineWidthPicker" destination="8Q7-QH-22Z" id="7sZ-pa-Wjl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="VaG-hb-Dfk" userLabel="PanDrawing">
+                    <connections>
+                        <action selector="drawingPanHandler:" destination="BYZ-38-t0r" id="26v-Rf-ls6"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-168" y="743"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Eraser" width="30" height="30"/>
+        <image name="LineShage" width="30" height="30"/>
+        <image name="LineWidth" width="30" height="30"/>
+        <image name="PencilShape" width="30" height="30"/>
+        <image name="RectShape" width="30" height="30"/>
+        <image name="RoundShape" width="30" height="30"/>
+        <image name="Save" width="30" height="30"/>
+        <image name="TrashBin" width="30" height="30"/>
+        <image name="TriangleShape" width="30" height="30"/>
+    </resources>
+</document>
